@@ -1,0 +1,119 @@
+estudiantes:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/estudiantes.csv
+
+calificaciones:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/calificaciones.csv
+
+asistencia:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/asistencia.csv
+
+inscripciones:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/inscripciones.csv
+
+preprocessed_data:
+  type: pickle.PickleDataset
+  filepath: data/02_intermediate/preprocessed_data.pkl
+
+X_train:
+  type: pickle.PickleDataset
+  filepath: data/03_primary/X_train.pkl
+
+X_test:
+  type: pickle.PickleDataset
+  filepath: data/03_primary/X_test.pkl
+
+y_train:
+  type: pickle.PickleDataset
+  filepath: data/03_primary/y_train.pkl
+
+y_test:
+  type: pickle.PickleDataset
+  filepath: data/03_primary/y_test.pkl
+
+model_supervised_rf:
+  type: pickle.PickleDataset
+  filepath: models/trained_models/model_supervised_rf.pkl
+
+model_supervised_xgb:
+  type: pickle.PickleDataset
+  filepath: models/trained_models/model_supervised_xgb.pkl
+
+model_supervised_svm:
+  type: pickle.PickleDataset
+  filepath: models/trained_models/model_supervised_svm.pkl
+
+model_supervised_lr:
+  type: pickle.PickleDataset
+  filepath: models/trained_models/model_supervised_lr.pkl
+
+model_supervised_knn:
+  type: pickle.PickleDataset
+  filepath: models/trained_models/model_supervised_knn.pkl
+
+model_supervised_tpot:
+  type: pickle.PickleDataset
+  filepath: models/trained_models/model_supervised_tpot.pkl
+
+model_unsupervised_kmeans:
+  type: pickle.PickleDataset
+  filepath: models/trained_models/model_unsupervised_kmeans.pkl
+
+model_unsupervised_dbscan:
+  type: pickle.PickleDataset
+  filepath: models/trained_models/model_unsupervised_dbscan.pkl
+
+model_unsupervised_agg:
+  type: pickle.PickleDataset
+  filepath: models/trained_models/model_unsupervised_agg.pkl
+
+model_unsupervised_gmm:
+  type: pickle.PickleDataset
+  filepath: models/trained_models/model_unsupervised_gmm.pkl
+
+model_unsupervised_iso:
+  type: pickle.PickleDataset
+  filepath: models/trained_models/model_unsupervised_iso.pkl
+
+model_rl_ppo:
+  type: pickle.PickleDataset
+  filepath: models/trained_models/model_rl_ppo.pkl
+
+model_rl_a2c:
+  type: pickle.PickleDataset
+  filepath: models/trained_models/model_rl_a2c.pkl
+
+model_rl_dqn:
+  type: pickle.PickleDataset
+  filepath: models/trained_models/model_rl_dqn.pkl
+
+model_rl_sac:
+  type: pickle.PickleDataset
+  filepath: models/trained_models/model_rl_sac.pkl
+
+model_rl_ddpg:
+  type: pickle.PickleDataset
+  filepath: models/trained_models/model_rl_ddpg.pkl
+
+preprocessor_unsup:
+  type: pickle.PickleDataset
+  filepath: models/trained_models/preprocessor_unsup.pkl
+
+preprocessor_rl:
+  type: pickle.PickleDataset
+  filepath: models/trained_models/preprocessor_rl.pkl
+
+supervised_metrics:
+  type: pandas.CSVDataset
+  filepath: results/metrics/supervised_metrics.csv
+
+unsupervised_metrics:
+  type: pandas.CSVDataset
+  filepath: results/metrics/unsupervised_metrics.csv
+
+rl_metrics:
+  type: pandas.CSVDataset
+  filepath: results/metrics/rl_metrics.csv

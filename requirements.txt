@@ -1,0 +1,15 @@
+ipython>=8.10
+jupyterlab>=3.0
+notebook
+kedro~=1.3.1
+kedro-datasets[pandas.CSVDataset,pandas.ParquetDataset,pickle.PickleDataset]
+scikit-learn
+pandas
+numpy
+xgboost
+lightgbm
+gymnasium
+stable-baselines3
+ipykernel
+tpot
+ipywidgets

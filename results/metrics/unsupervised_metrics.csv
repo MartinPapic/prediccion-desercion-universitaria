@@ -1,0 +1,6 @@
+Model,Silhouette_Score,N_Clusters_Found
+KMeans,0.12669085121914714,3
+DBSCAN,-1.0,1
+Agglomerative,0.280660514945388,3
+GMM,0.15566441741227235,2
+IsolationForest,0.30264507518560413,2

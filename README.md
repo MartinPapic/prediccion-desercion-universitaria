@@ -24,9 +24,22 @@ Aunque la pauta recomienda una estructura plana en `src/`, este proyecto ha opta
 
 ## 2. Dependencias del Proyecto
 
-El proyecto requiere un entorno virtual con Python 3.10 o superior (recomendado vía Anaconda).
+El proyecto requiere ejecutarse dentro de un entorno virtual aislado para asegurar la compatibilidad de las librerías. 
 
-Para instalar las dependencias exactas, abre tu terminal en la raíz del proyecto y ejecuta:
+### Activar el Entorno Virtual (`.venv`)
+Si estás en Windows (usando PowerShell), abre tu terminal en la raíz del proyecto y ejecuta:
+
+```bash
+# 1. Crear el entorno virtual (si aún no lo tienes)
+python -m venv .venv
+
+# 2. Activar el entorno virtual
+.\.venv\Scripts\activate
+```
+*(Sabrás que está activado cuando veas el prefijo `(.venv)` en tu consola).*
+
+### Instalar Dependencias
+Con el entorno activado, instala las herramientas y librerías ejecutando:
 
 ```bash
 pip install -r requirements.txt
